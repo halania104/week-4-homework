@@ -1,15 +1,17 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import WeatherSearch from "./WeatherSearch";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+import Weather from "./Weather";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <h1> Weather App </h1>
-    <WeatherSearch />
+    <Weather />
   </StrictMode>
 );
 
